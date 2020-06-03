@@ -1,3 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.container-calculator {
+  @apply mx-auto max-w-sm shadow-lg my-4;
+}

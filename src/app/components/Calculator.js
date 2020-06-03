@@ -1,12 +1,11 @@
-import React, { Component, useState } from 'react'
+import React from 'react';
 import './Calculator.css';
-
-const Calculator = (props) => {
-  const {initialValue} = props;
-  const [initial, setInitial] = useState(initialValue!==undefined?initialValue:0);
-  return (
-    <div className="calculator">
-      <h1>{initial}</h1>
+import CalculatorDisplay from './CalculatorDisplay';
+const Calculator = props => {
+  return(
+    <div>
+      <CalculatorDisplay initialValue={props.initialValue}/>
+      {props.children}
     </div>
   );
 }
