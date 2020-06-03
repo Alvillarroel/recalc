@@ -1,0 +1,27 @@
+.btn {
+  @apply font-bold py-4 px-6 rounded-lg w-full outline-none;
+  height: 100%;
+  align-self: baseline;
+}
+.btn-red{
+  @apply bg-red-500 text-black;
+}
+.btn-red:hover{
+  @apply bg-red-700 text-white;
+}
+.btn-blue{
+  @apply bg-blue-500 text-black;
+}
+.btn-blue:hover{
+  @apply bg-blue-700 text-white;
+}
+.btn-flex{
+  width: 31.3333%;
+  margin: 1%;
+}
+.btn-gray {
+  @apply bg-gray-300 text-black;
+}
+.btn-gray:hover {
+  @apply bg-gray-500 text-white;
+}

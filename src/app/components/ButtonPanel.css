@@ -1,0 +1,3 @@
+.buttonPanel{
+  @apply flex justify-around content-center;
+}
