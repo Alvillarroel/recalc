@@ -98,10 +98,11 @@ const operate = (nOne, nTwo, type) => {
     case 'x':
       return (Number(nOne)*Number(nTwo)).toString();
     case '÷':
-      return (nTwo !== "0") ? (Number(nOne)/Number(nTwo)).toString() :"Divide by 0 error";
+      return (Number(nTwo)!==0) ? (Number(nOne)/Number(nTwo)).toString() :"Divide by 0 error";
     default:
       console.error(`Unknown operation '${type}'`);
   }
+  
 }
 
  
