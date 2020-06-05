@@ -1,6 +1,3 @@
-/**
- *  
- */
 export const calculate = (state, btnName) => {
   /**
    * This clear the state of calculator

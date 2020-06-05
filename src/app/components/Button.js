@@ -1,6 +1,6 @@
 import React from 'react'
 import './Button.css';
-
+import PropTypes from 'prop-types'
 const Button = props => {
   const classes = props.className ? `btn ${props.className}`: 'btn btn-gray';
   const style = props.style ? {...props.style} : '';
@@ -13,6 +13,11 @@ const Button = props => {
     </div>
   );
 }
-
+Button.propTypes={
+  name:PropTypes.string.isRequired,
+  className:PropTypes.string,
+  style:PropTypes.object,
+  click:PropTypes.func.isRequired
+}
 export default Button;
 

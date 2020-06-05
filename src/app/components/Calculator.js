@@ -3,6 +3,8 @@ import './Calculator.css';
 import CalculatorDisplay from './CalculatorDisplay';
 import ButtonPanel from './ButtonPanel';
 import { calculate } from '../functions/Operations';
+import PropTypes from 'prop-types'
+
 const Calculator = props => {
   const [state, setState] = useState({
     total: props.initialValue ? props.initialValue : null,
@@ -24,6 +26,10 @@ const Calculator = props => {
       <ButtonPanel clickHandler={handleCalculate}/>
     </div>
   );
+}
+
+Calculator.propTypes = {
+  initialValue: PropTypes.string
 }
 
 export default Calculator;

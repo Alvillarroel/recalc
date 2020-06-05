@@ -1,5 +1,7 @@
 import React from 'react'
 import './CalculatorDisplay.css';
+import PropTypes from 'prop-types'
+
 
 const CalculatorDisplay = (props) => {
   return (
@@ -7,6 +9,10 @@ const CalculatorDisplay = (props) => {
       <h1 className="display-text">{props.display || "0"}</h1>
     </div>
   );
+}
+
+CalculatorDisplay.propTypes = {
+  display:PropTypes.string.isRequired
 }
 
 export default CalculatorDisplay;
