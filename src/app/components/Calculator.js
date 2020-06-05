@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Calculator.css';
 import CalculatorDisplay from './CalculatorDisplay';
 import ButtonPanel from './ButtonPanel';
@@ -22,7 +22,7 @@ const Calculator = props => {
 
   return(
     <div>
-      <CalculatorDisplay display={state.next || state.total}/>
+      <CalculatorDisplay display={state.next || state.total || "0"}/>
       <ButtonPanel clickHandler={handleCalculate}/>
     </div>
   );
