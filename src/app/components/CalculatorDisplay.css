@@ -1,0 +1,6 @@
+.calculator-display {
+  @apply bg-black text-white text-right p-4 ;
+}
+.display-text{
+  @apply m-0;
+}

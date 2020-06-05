@@ -1,0 +1,3 @@
+.container-calculator {
+  @apply mx-auto max-w-sm shadow-lg my-4;
+}

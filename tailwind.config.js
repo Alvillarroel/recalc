@@ -1,3 +1,5 @@
+const { colors } = require('tailwindcss/defaultTheme')
+
 module.exports = {
   theme: {
     screens: {
@@ -24,6 +26,14 @@ module.exports = {
       'screen': '100vh',
       '20': '5rem'
     },
+    borderRadius: {
+      'none': '0',
+      'sm': '.125rem',
+      default: '.25rem',
+      'lg': '.5rem',
+      'full': '9999px',
+    },
+    colors:colors,
     extend: {},
   },
   variants: {},
