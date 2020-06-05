@@ -1,0 +1,13 @@
+import React, { useState } from "react";
+import './App.css';
+import Calculator from "./Calculator";
+
+const App = () => {
+  return (
+    <div className="container-calculator">
+      <Calculator initialValue="123"/>
+    </div>
+  );
+};
+
+export default App;
