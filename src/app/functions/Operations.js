@@ -40,11 +40,11 @@ export const calculate = (state, btnName) => {
     if (state.next) {
       // ignore a . if the next number already has one
       if (state.next.includes(".")) {
-        return { next: state.next};
+        return {total:state.total, next: state.next, operation:state.operation};
       }
-      return { next: state.next + "." };
+      return {total:state.total, next: state.next + ".", operation:state.operation };
     }
-    return { next: "0." };
+    return {total:state.total, next: "0.", operation:state.operation };
   }
 
   if (btnName === "=") {
