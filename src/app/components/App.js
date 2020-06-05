@@ -5,7 +5,7 @@ import Calculator from "./Calculator";
 const App = () => {
   return (
     <div className="container-calculator">
-      <Calculator initialValue="123"/>
+      <Calculator initialValue="100"/>
     </div>
   );
 };
