@@ -22,7 +22,7 @@ const Calculator = props => {
 
   return(
     <div>
-      <CalculatorDisplay display={state.next || state.total}/>
+      <CalculatorDisplay display={state.next || state.total || "0"}/>
       <ButtonPanel clickHandler={handleCalculate}/>
     </div>
   );
